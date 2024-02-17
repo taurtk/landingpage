@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<html lang="EN">
+    <head>
+        <meta charset="utf-8"/>
+        <title>💡 The Ai4innovation toolkit</title>
+        <meta content="Let The Ai4innovation toolkit spark your next big idea. Enter short description of your business and an alternate view of the problem to do some actual out-of-the-box ideation." name="description"/>
+        <meta content="💡 The Ai4innovation toolkit" property="og:title"/>
+        <meta content="Let The Ai4innovation toolkit spark your next big idea. Enter short description of your business and an alternate view of the problem to do some actual out-of-the-box ideation." property="og:description"/>
+        <meta content="💡 The Ai4innovation toolkit" property="twitter:title"/>
+        <meta content="Let The Ai4innovation toolkit spark your next big idea. Enter short description of your business and an alternate view of the problem to do some actual out-of-the-box ideation." property="twitter:description"/>
+        <meta property="og:type" content="website"/>
+        <meta content="summary_large_image" name="twitter:card"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        <link href="/static/style.css" rel="stylesheet" type="text/css"/>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+        <script>
+            function startCountdown() {
+                // Display the countdown div
+                document.getElementById("countdown").style.display = "block";
+
+
+                let timeInSeconds = 180;
+
+                // Update the countdown every second
+                const countdownInterval = setInterval(function() {
+                    // Display the remaining time
+                    document.getElementById("countdown").innerText = `We are getting your response ready, time remaining: ${timeInSeconds} seconds`;
+
+                    // Decrease the time by 1 second
+                    timeInSeconds--;
+
+                    // Check if the countdown has reached zero
+                    if (document.getElementById("results-container").innerHTML !="") {
+                        // Hide the countdown div
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("btn-print").disabled = false;
+                        
+                        // Clear the interval to stop the countdown
+                        clearInterval(countdownInterval);
+
+                        // Perform any actions you want when the countdown reaches zero
+                        document.getElementById("countdown").innerText = "Time's up!";
+                    }
+                   
+               }, 1000); // Update every 1000 milliseconds (1 second)
+            }
+
+
+        </script>
+        
+        <script>
+            jQuery(document).ready(function(){
+                
+                $('#btn-print').click(function(){
+                // Get the content, logo, and heading from the target div
+                var contentToPrint = $('#results-container').html();
+                var logo = $('#image-2').prop('outerHTML');
+                var heading = $('#main-heading').prop('outerHTML');
+                
+                // Open a new window or iframe
+                var printWindow = window.open('', '_blank');
+                
+                // Write the content, logo, and heading to the new window or iframe
+                printWindow.document.write('<html><head><title>Global Entrepreneurship Alliance</title>');
+                printWindow.document.write('<style>body {font-family: Arial, sans-serif; color: #333; background-color: #fff;}');
+                printWindow.document.write('#print-content {border: 1px solid #ccc; padding: 20px;}');
+                printWindow.document.write('</style></head><body>');
+                printWindow.document.write(logo);
+                printWindow.document.write(heading);
+                printWindow.document.write('<div id="print-content">' + contentToPrint + '</div>');
+                printWindow.document.write('</body></html>');
+
+            
+                // Call the print function on the new window or iframe
+                printWindow.document.close();
+                printWindow.print();
+            });
+
+            });
+        </script>
+
+        <script>
+            jQuery(document).ready(function(){
+                
+                $('#btn-print').click(function(){
+                // Get the content, logo, and heading from the target div
+                var contentToPrint = $('#results-container').html();
+                var logo = $('#image-2').prop('outerHTML');
+                var heading = $('#main-heading').prop('outerHTML');
+                
+                // Open a new window or iframe
+                var printWindow = window.open('', '_blank');
+                
+                // Write the content, logo, and heading to the new window or iframe
+                printWindow.document.write('<html><head><title>Global Entrepreneurship Alliance</title>');
+                printWindow.document.write('<style>body {font-family: Arial, sans-serif; color: #333; background-color: #fff;}');
+                printWindow.document.write('#print-content {border: 1px solid #ccc; padding: 20px;}');
+                printWindow.document.write('</style></head><body>');
+                printWindow.document.write(logo);
+                printWindow.document.write(heading);
+                printWindow.document.write('<div id="print-content">' + contentToPrint + '</div>');
+                printWindow.document.write('</body></html>');
+
+            
+                // Call the print function on the new window or iframe
+                printWindow.document.close();
+                printWindow.print();
+            });
+
+            });
+        </script>
+
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            WebFont.load({
+                google: {
+                    families: ["PT Sans:400,400italic,700,700italic", "PT Serif:400,400italic,700,700italic"]
+                }
+            });
+        </script>
+        <script type="text/javascript">
+            !function(o, c) {
+                var n = c.documentElement
+                  , t = " w-mod-";
+                n.className += t + "js",
+                ("ontouchstart"in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+            }(window, document);
+        </script>
+
+        <link href="/static/Assets/favicon/android-chrome-512x512.png" rel="shortcut icon" type="image/x-icon"/>
+        <link href="/static/Assets/favicon/apple-touch-icon.png" rel="apple-touch-icon"/>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-27R59ZM6Q5"></script>
+
+
+        <script type="text/javascript">
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('set', 'developer_id.dZGVlNj', true);
+            gtag('config', 'G-27R59ZM6Q5');
+        </script>
+       
+
+        
+        <script>
+            // function tnorth() {
+            //     fetch('/tnorth', {
+            //         method: 'POST',
+            //         headers: {
+            //             'Content-Type': 'application/x-www-form-urlencoded',
+            //         },
+            //         // body: 'user_prompt_1=' + userInput1 + '&user_prompt_2=' + userInput2 + '&user_prompt_3=' + userInput3 + '&user_prompt_4=' + userInput4
+            //         body: 'user_prompt=' + data1.value +" "+ data2.value +" "+ data3.value +" "+ data4.value +" "+ data5.value +" "+ data6.value +" "+ data7.value +" "+ data8.value
+            //     })
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         for (let i = 1; i <= 97; i++) {
+            //             let responseKey = 'response_' + i;
+            //             let responseData = data[responseKey];
+            //             document.getElementById('api_response' + i).innerText = responseData;
+            //         }
+            //     })
+            //     .catch(error => {
+            //         console.error('Error:', error);
+            //     });
+            // }
+
+            function tnorth() {
+            // Get user inputs (assuming you have input elements with IDs like userInput1, userInput2, etc.)
+            var userInput1 = document.getElementById('data1');
+            var userInput2 = document.getElementById('data2');
+            var userInput3 = document.getElementById('data3');
+            var userInput4 = document.getElementById('data4');
+            var userInput5 = document.getElementById('data5');
+            var userInput6 = document.getElementById('data6');
+            var userInput7 = document.getElementById('data7');
+            var userInput8 = document.getElementById('data8');
+
+            // Prepare the request body
+            var requestBody = 'user_prompt=' + userInput1.value + ' ' + userInput2.value + ' ' + userInput3.value + ' ' + userInput4.value + ' ' + userInput5.value + userInput6.value + ' ' + userInput7.value + ' ' + userInput8.value;
+
+            // Get progress bar and results container elements
+            // var progressBar = document.getElementById('progress-bar');
+            var resultsContainer = document.getElementById('results-container');
+
+            // Reset progress bar and results
+            // progressBar.style.width = '0%';
+            resultsContainer.innerHTML = '';
+
+            // Start time tracking
+            var startTime = new Date().getTime();
+
+            fetch('/traditional_Methods', {
+                method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: requestBody,
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const numberOfResponses = Object.keys(data).filter(key => key.startsWith('response_')).length;
+
+                    for (let i = 0; i < numberOfResponses; i++) {
+                        let responseKey = 'response_' + i;
+                        let responseData = data[responseKey];
+
+                        // Split responseData into paragraphs if it contains newline characters
+                        let paragraphs = responseData.split('\n').map(paragraph => '<p>' + paragraph + '</p>').join('');
+                        // 
+
+                        // Replace line breaks with <p> tags
+                        // let paragraphs = '<p>' + responseData.replace(/\n/g, '</p><p>') + '</p>';
+                         j=i+1;
+                        resultsContainer.innerHTML += '<h3>Response ' + j + ':</h3>' + paragraphs + '';
+                    }
+                })
+            }
+            // fetch('/tnorth', {
+            //     method: 'POST',
+            //         headers: {
+            //             'Content-Type': 'application/x-www-form-urlencoded',
+            //         },
+            //         body: requestBody,
+            //     })
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         const numberOfResponses = Object.keys(data).filter(key => key.startsWith('response_')).length;
+
+            //         for (let i = 0; i < numberOfResponses; i++) {
+            //             let responseKey = 'response_' + i;
+            //             let responseData = data[responseKey];
+            //             resultsContainer.innerHTML += '<p>Response ' + i + ': ' + responseData + '</p>';
+            //         }
+            //     })
+            //     .catch(error => {
+            //         console.error('Error:', error);
+            //     })
+
+            //     .then(response => {
+            //         return response.json();
+            //     })
+            //     .then(data => {
+            //         for (let i = 0; i < data.length; i++) {
+            //             let responseKey = 'response_' + i;
+            //             let responseData = data[responseKey];
+            //             resultsContainer.innerHTML += '<p>Response ' + i + ': ' + responseData + '</p>';
+            //         }
+            //     })
+            //     .catch(error => {
+            //         console.error('Error:', error);
+            //     });
+            // }
+
+
+        </script>
+
+<script>
+            function startCountdown() {
+        // Display the countdown div
+        document.getElementById("countdown").style.display = "block";
+
+
+        let timeInSeconds = 180;
+
+        // Update the countdown every second
+        const countdownInterval = setInterval(function() {
+            // Display the remaining time
+            document.getElementById("countdown").innerText = `We are getting your response ready, time remaining: ${timeInSeconds} seconds`;
+
+            // Decrease the time by 1 second
+            timeInSeconds--;
+
+            // Check if the countdown has reached zero
+            if (document.getElementById("results-container").innerHTML !="") {
+                // Hide the countdown div
+                document.getElementById("countdown").style.display = "none";
+                        document.getElementById("btn-print").disabled = false;
+                
+                // Clear the interval to stop the countdown
+                clearInterval(countdownInterval);
+
+                // Perform any actions you want when the countdown reaches zero
+                // document.getElementById("countdown").innerText = "Time's up!";
+            }
+            if(timeInSeconds<0){
+                document.getElementById("countdown").innerText = `Your request is taking longer than expected. Please wait`;
+                
+            }
+           
+        }, 1000); // Update every 1000 milliseconds (1 second)
+    }
+
+
+        </script>
+        
+        <script>
+            jQuery(document).ready(function(){
+                
+                $('#btn-print').click(function(){
+                // Get the content, logo, and heading from the target div
+                var contentToPrint = $('#results-container').html();
+                var logo = $('#image-2').prop('outerHTML');
+                var heading = $('#main-heading').prop('outerHTML');
+                
+                // Open a new window or iframe
+                var printWindow = window.open('', '_blank');
+                
+                // Write the content, logo, and heading to the new window or iframe
+                printWindow.document.write('<html><head><title>Global Entrepreneurship Alliance</title>');
+                printWindow.document.write('<style>body {font-family: Arial, sans-serif; color: #333; background-color: #fff;}');
+                printWindow.document.write('#print-content {border: 1px solid #ccc; padding: 20px;}');
+                printWindow.document.write('</style></head><body>');
+                printWindow.document.write(logo);
+                printWindow.document.write(heading);
+                printWindow.document.write('<div id="print-content">' + contentToPrint + '</div>');
+                printWindow.document.write('</body></html>');
+
+            
+                // Call the print function on the new window or iframe
+                printWindow.document.close();
+                printWindow.print();
+            });
+
+            });
+        </script>
+
+
+        <script>
+            // JavaScript function to adjust input width based on content
+            function adjustTextareaHeight(textarea) {
+                textarea.style.height = 'auto'; // Reset height to auto
+                textarea.style.height = (textarea.scrollHeight) + 'px'; // Adjust height based on scrollHeight
+    }
+          </script>
+
+
+    </head>
+    <body class="body">        <div class="new-page">
+            <div class="section-9">
+                <div class="columns-2 w-row">
+                    <div class="column-11 w-col w-col-3">
+                        <div class="div-block-6">
+                            <a href="/" class="w-inline-block">
+                                <img src="/static/Assets/png-gea.png" alt="" class="image-2" id="image-2"/>
+                            </a>
+                            <div class="div-block-3">
+                                <h1 class="h4-special">
+                                    <strong>The Ai4innovation toolkit</strong>
+                                </h1>
+                                <p class="paragraph subtitle">
+                                    259 AI tools/methods and 6 apps to help you step by step through the ABCs of Innovation. (note: 3 apps in development)
+                                </p>
+                                <br>
+                                <a href="#" class="button-tools-inline w-button">📡 Alignment</a>
+                                    <ul><a href="{{ url_for('index') }}" class="list-item point-button">Build Market Understanding(21)</a></ul>
+                                    <ul><a href="/clarifyObjective" class="list-item point-button">Clarify objectives(10)</a></ul>
+                                    <ul><a href="https://true-north-14353.bubbleapps.io/version-test?debug_mode=true" target="_blank" class="list-item point-button">Write a TRUE North(App) </a></ul>
+                                
+                                <a href="#" class="button-tools-inline w-button">💻 Build Ideas</a>
+                                    <ul><a href="/ClarifyChallenge" class="list-item point-button">Clarify Challenge (31)</a></ul>
+                                    <!-- <ul><a href="/trizanalysis" class="list-item point-button">Triz Based Analysis (11)</a></ul> -->
+                                    <ul><a href="/build" class="list-item point-button">Build Ideas (70)</a></ul>
+                                    <ul><a href="/traditionalMethods" class="list-item point-button">Leading Methods (7)</a></ul>
+                                    <ul><a href="/CreativeCombinations" class="list-item point-button">Creative Combinations (9)</a></ul>
+                                    <ul><a href="/AlternativePerspectives" class="list-item point-button">Alternative Perspectives (5)</a></ul>
+                                    <ul><a href="/TRIZBuild" class="list-item point-button">TRIZ (7)</a></ul>
+                                    <ul><a href="/LesserKnownMethods" class="list-item point-button">Lesser Known Methods (42)</a></ul>
+                                    <ul><a href="/underDevelopment" target="_blank" class="list-item point-button">Select winning concepts (App-in development)</a></ul>
+                                
+                                <a href="#" class="button-tools-inline w-button">💬 Communicate and Check</a>
+                                    <ul><a href="/ImproveSellingConcept" class="list-item point-button">Improve selling concept (26)</a></ul>
+                                    <ul><a href="/checkIdeas" class="list-item point-button">Check Ideas (6)</a></ul>
+                                    <ul><a href="/makeNames" class="list-item point-button">Make Names (7)</a></ul>
+                                    <ul><a href="/makeSellingLines" class="list-item point-button">Make Selling Lines (20)</a></ul>
+                                    <ul><a href="/underDevelopment" target="_blank" class="list-item point-button">Kills or continue (App-in development) </a></ul>
+                            
+                                <a href="#" class="button-tools-inline w-button">🔮 Systematically Improve</a>
+                                    <ul><a href="/businessAnalysis" class="list-item point-button">Business Analysis (24)</a></ul>
+                                    <ul><a href="/underDevelopment" target="_blank"  class="list-item point-button">Kill or continue (App-in development)</a></ul>
+                                    <!-- <ul><a href="#" class="list-item point-button">Write a TRUE North(App) </a></ul> -->
+                                
+                                <a href="#" class="button-tools-inline w-button">📊 Pitch</a>
+                                    <ul><a href="/pitchIdeas" class="list-item point-button">Pitch Ideas (7)</a></ul>
+                                    <ul><a href="https://autopitch-ai4innovation.pythonanywhere.com/" class="list-item point-button">Pitch Template (App)</a></ul>
+                                    <ul><a href="https://ai-evaluation.bubbleapps.io/version-test?debug_mode=true" class="list-item point-button">Pitch Review (App)</a></ul>
+                                    <ul><a href="/underDevelopment" target="_blank" class="list-item point-button">Business Review (App-in development)</a></ul>
+                                
+                                <a href="http://tiny.cc/ai4innov_info" class="button-tools-inline w-button">About us</a>
+                                <a href="http://tiny.cc/ai4innov-training" class="button-tools-inline w-button">Courses | Training</a>
+                                <a href="http://tiny.cc/ai4innov_sprint" class="button-tools-inline w-button">Let’s run a sprint together </a>
+
+
+                                
+
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="column-12 w-col w-col-9">
+                        <div class="section">
+                            <div class="hero-title">
+                                <h1 id="main-heading"class="h1">
+                                     <strong>Leading Methods</strong>
+                                </h1>
+                            </div>
+                            <p class="paragraph subtitle">
+                                <p>Generate ideas to solve your challenge fast </p>
+                                <!-- <br/>Enter short description of your business and an alternate view of the problem to do some actual out-of-the-box ideation. -->
+                            </p>
+                            <div class="container">
+                                
+                            </div>
+                        </div>
+
+                        <div>
+                            <!-- <form action="/generate_responses" method="post"></form> -->
+                                <div class="columns w-row">
+                                    <form action="/true-north" method="post">
+                                        <table>
+                                            <tr>
+                                            <th></th>
+                                            <th>Your Input</th>
+                                            </tr>
+                                            <tr>
+                                            <td>Truly Simple <br> <p style="font-weight: normal;">A headline that is suggestive of the mission.</p> </td>
+                                            <td><textarea type="text" id="data1" oninput="adjustInputWidth(this)" placeholder="Enter your input"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Narrative <br> <p style="font-weight: normal;">The story should be so clear, people will understand why we want to get started and know enough to get the “how” right. </p> </td>
+                                            <td><textarea type="text" id="data2" oninput="adjustInputWidth(this)" placeholder="Enter your input"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Objectives <br> <p style="font-weight: normal;">Finish the sentence with one mission. We need ideas for… </p> </td>
+                                            <td><textarea type="text" id="data3" oninput="adjustInputWidth(this)" placeholder="Enter your input"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Restrictions <br> <p style="font-weight: normal;">Explain what you do NOT want</p> </td>
+                                            <td><textarea type="text" id="data4" oninput="adjustInputWidth(this)" placeholder="Enter your input"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Tactical Constraints <br> <p style="font-weight: normal;">What are your key constraints in terms of time, resources, investment, regulations, people, etc</p> </td>
+                                            <td><textarea type="text" id="data5" oninput="adjustInputWidth(this)" placeholder="Enter your input"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Places to Start <br> <p style="font-weight: normal;">Areas to look for ideas to accomplish the mission including any relevant live project work.</p> </td>
+                                            <td><textarea type="text" id="data6" oninput="adjustInputWidth(this)" placeholder="Enter your input"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Assets/Opportunities <br> <p style="font-weight: normal;">What “Birds in Hand” do you have that could help solve this challenge.</p> </td>
+                                            <td><textarea type="text" id="data7" oninput="adjustInputWidth(this)" placeholder="Enter your input"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Blockers <br> <p style="font-weight: normal;">What are some challenges | “blockers” you will need to overcome </p> </td>
+                                            <td><textarea type="text" id="data8" oninput="adjustInputWidth(this)" placeholder="Enter your input"></textarea></td>
+                                            </tr>
+
+                                        </table>
+                                    </form>
+                                </div>
+                                <button class="submit-button w-button" onclick="tnorth();startCountdown()">Get Insights</button>
+                                <button class="export-button w-button" id="btn-print"  disabled onclick="">Export</button>
+
+
+
+                            
+                        </div> 
+                        
+
+<!-- ****************** -->
+
+
+                       
+                        <!-- <div class="output">
+                            <div id="api_response">
+                                <div class="lottie-animation" data-animation-type="lottie" data-src="https://assets.website-files.com/640fa33f33c6024cf3e800d6/6411fffbd7d4478b7afe980a_16766-forget-password-animation.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-duration="0"></div>
+                                    <h1 class="h3">We are creating your request. This can take up to 20 seconds...</h1>
+                            </div>
+                            <div id="api_response1"></div>
+                            <br><br>
+                            <div id="api_response2"></div>
+                            <br><br>
+                            <div id="api_response3"></div>
+                            <br><br>
+                            <div id="api_response4"></div>
+                            <br><br>
+                            <div id="api_response5"></div>
+                            <br><br>
+                            <div id="api_response6"></div>
+                            <br><br>
+                            <div id="api_response7"></div>
+                            <br><br>
+                            <div id="api_response8"></div>
+                            <br><br>
+                            <div id="api_response9"></div>
+                            <br><br>
+                            <div id="api_response10"></div>
+                            <br><br>
+                            <div id="api_response11"></div>
+                            <br><br>
+                            <div id="api_response12"></div>
+                            <br><br>
+                            <div id="api_response13"></div>
+                            <br><br>
+                            <div id="api_response14"></div>
+                            <br><br>
+                            <div id="api_response15"></div>
+                            <br><br>
+                            <div id="api_response16"></div>
+                            <br><br>
+                            <div id="api_response17"></div>
+                            <br><br>
+                            <div id="api_response18"></div>
+                            <br><br>
+                            <div id="api_response19"></div>
+                            <br><br>
+                            <div id="api_response20"></div>
+                            <br><br>
+                            <div id="api_response21"></div>
+                            <br><br>
+                            <div id="api_response22"></div>
+                            <br><br>
+                            <div id="api_response23"></div>
+                            <br><br>
+                            <div id="api_response24"></div>
+                            <br><br>
+                            <div id="api_response25"></div>
+                            <br><br>
+                            <div id="api_response26"></div>
+                            <br><br>
+                            <div id="api_response27"></div>
+                            <br><br>
+                            <div id="api_response28"></div>
+                            <br><br>
+                            <div id="api_response29"></div>
+                            <br><br>
+                            <div id="api_response30"></div>
+                            <br><br>
+                            <div id="api_response31"></div>
+                            <br><br>
+                            <div id="api_response32"></div>
+                            <br><br>
+                            <div id="api_response33"></div>
+                            <br><br>
+                            <div id="api_response34"></div>
+                            <br><br>
+                            <div id="api_response35"></div>
+                            <br><br>
+                            <div id="api_response36"></div>
+                            <br><br>
+                            <div id="api_response37"></div>
+                            <br><br>
+                            <div id="api_response38"></div>
+                            <br><br>
+                            <div id="api_response39"></div>
+                            <br><br>
+                            <div id="api_response40"></div>
+                            <br><br>
+                            <div id="api_response41"></div>
+                            <br><br>
+                            <div id="api_response42"></div>
+                            <br><br>
+                            <div id="api_response43"></div>
+                            <br><br>
+                            <div id="api_response44"></div>
+                            <br><br>
+                            <div id="api_response45"></div>
+                            <br><br>
+                            <div id="api_response46"></div>
+                            <br><br>
+                            <div id="api_response47"></div>
+                            <br><br>
+                            <div id="api_response48"></div>
+                            <br><br>
+                            <div id="api_response49"></div>
+                            <br><br>
+                            <div id="api_response50"></div>
+                            <br><br>
+                            <div id="api_response51"></div>
+                            <br><br>
+                            <div id="api_response52"></div>
+                            <br><br>
+                            <div id="api_response53"></div>
+                            <br><br>
+                            <div id="api_response54"></div>
+                            <br><br>
+                            <div id="api_response55"></div>
+                            <br><br>
+                            <div id="api_response56"></div>
+                            <br><br>
+                            <div id="api_response57"></div>
+                            <br><br>
+                            <div id="api_response58"></div>
+                            <br><br>
+                            <div id="api_response59"></div>
+                            <br><br>
+                            <div id="api_response60"></div>
+                            <br><br>
+                            <div id="api_response61"></div>
+                            <br><br>
+                            <div id="api_response62"></div>
+                            <br><br>
+                            <div id="api_response63"></div>
+                            <br><br>
+                            <div id="api_response64"></div>
+                            <br><br>
+                            <div id="api_response65"></div>
+                            <br><br>
+                            <div id="api_response66"></div>
+                            <br><br>
+                            <div id="api_response67"></div>
+                            <br><br>
+                            <div id="api_response68"></div>
+                            <br><br>
+                            <div id="api_response69"></div>
+                            <br><br>
+                            <div id="api_response70"></div>
+                            <br><br>
+                            <div id="api_response71"></div>
+                            <br><br>
+                            <div id="api_response72"></div>
+                            <br><br>
+                            <div id="api_response73"></div>
+                            <br><br>
+                            <div id="api_response74"></div>
+                            <br><br>
+                            <div id="api_response75"></div>
+                            <br><br>
+                            <div id="api_response76"></div>
+                            <br><br>
+                            <div id="api_response77"></div>
+                            <br><br>
+                            <div id="api_response78"></div>
+                            <br><br>
+                            <div id="api_response79"></div>
+                            <br><br>
+                            <div id="api_response80"></div>
+                            <br><br>
+                            <div id="api_response81"></div>
+                            <br><br>
+                            <div id="api_response82"></div>
+                            <br><br>
+                            <div id="api_response83"></div>
+                            <br><br>
+                            <div id="api_response84"></div>
+                            <br><br>
+                            <div id="api_response85"></div>
+                            <br><br>
+                            <div id="api_response86"></div>
+                            <br><br>
+                            <div id="api_response87"></div>
+                            <br><br>
+                            <div id="api_response88"></div>
+                            <br><br>
+                            <div id="api_response89"></div>
+                            <br><br>
+                            <div id="api_response90"></div>
+                            <br><br>
+                            <div id="api_response91"></div>
+                            <br><br>
+                            <div id="api_response92"></div>
+                            <br><br>
+                            <div id="api_response93"></div>
+                            <br><br>
+                            <div id="api_response94"></div>
+                            <br><br>
+                            <div id="api_response95"></div>
+                            <br><br>
+                            <div id="api_response96"></div>
+                            <br><br>
+                            <div id="api_response97"></div>
+                        </div> -->
+
+                        <div id="progress-container">
+
+                            <div id="countdown"></div>
+
+                        </div>
+                        
+                        <div class="output" id="results-container">
+                            
+                            <!-- <h2>We are creating your request.</h2>
+                            <div class="timer animatable">
+                            <svg>
+                                <circle cx="50%" cy="50%" r="90"/>
+                                <circle cx="50%" cy="50%" r="90" pathLength="1" />
+                                <text x="100" y="100" text-anchor="middle"><tspan id="timeLeft"></tspan></text>
+                                <text x="100" y="120" text-anchor="middle">seconds</text>
+                            </svg>
+                            </div> -->
+                        </div>
+
+                        <p class="paragraph policies">
+                            By using this tool, you agree to our <a href="#" target="_blank" class="link">Terms of Service and Policies </a>
+                            |  <a href="https://openai.com/policies/terms-of-use" target="_blank" class="link">OpenAI’s Terms of Service and Policies</a>
+                            |  <a href="#" target="_blank" class="link">Copyright Bryan Cassady | The Global Entrepreneurship Alliance 2024</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=640fa33f33c6024cf3e800d6" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <!-- <script src="https://assets.website-files.com/640fa33f33c6024cf3e800d6/js/ai-tools-boi.5dd2da2ef.js" type="text/javascript"></script> -->
+        <!-- Start emojicom.io widget -->
+        <script>
+            window.emojicom_widget = {
+                campaign: "iA93liEi7FvmZodXwCZ6"
+            };
+        </script>
+
+       
+    </body>
+</html>
